@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <title>Mars weather</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap" 
+    rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Scripts -->
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+
+    <main class=:mars-current-weather>
+        <h1 class="main-title">Weather at Elysium Plantitia</h1>
+
+        <div class="date">
+            <h2 class="section section--date">Sol 300</h2>
+            <p class="date__day">September 30</p>
+        </div>
+
+        <div class="temp">
+            <h2 class="section-title">Temperature</h2>
+            <p class="reading">High: 10C</p>
+            <p class="reading">Low: -120C</p>
+        </div>
+
+        <div class="wind">
+            <h2 class="section-title">Wind</h2>
+            <p class="reading">75 km/h</p>
+            
+            <div class="wind-direction">
+                <p class="sr-only">45deg</p>
+                <div class="wind__arrow"></div>
+            </div>
+        </div>
+
+        <div class="info">
+            <p> Insight is...
+            </p>
+        </div>
+
+        <div class="unit-conv">
+            <label for="celsius">C</label>
+            <input type="radio" id="celsius" name="unit" checked>
+
+            <button class="unit__toggle"></button>
+            <label for="farenheit">F</label>
+            <input type="radio" id="farenheit" name="unit" checked>
+        </div>
+
+
+    </main>
+    <div class="recent-weather">
+        <label for="weather-toggle" class="recent-weather-label">&#8593; 
+        <span class="sr-only"> Show recent weather</span>
+        </label>
+        
+        <input type="checkbox"
+        id="weather-toggle"
+        class="recent-weather-toggle"
+        >
+
+        <h2 class="main-title">Previous Week</h2>
+
+        <div class> </div>
+    </div>
+
+</body>
+</html>
